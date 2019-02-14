@@ -1,0 +1,52 @@
+.services {
+	padding: 3rem 0;
+	.services__cards {
+		display: flex;
+		justify-content: space-between;
+		.card {
+			width: 24%;
+			text-align: center;
+			transform: 0.5s ease;
+			.card__icon {
+				margin-bottom: 1.75rem;
+				i {
+					font-size: 3rem;
+				}
+			}
+			.card__title {
+				margin-bottom: 1.75rem;
+				font-family: $raleway_s;
+				font-size: 1.375rem;
+				text-transform: capitalize;
+			}
+			.card__desc {
+				margin-bottom: 2rem;
+				font-size: 0.875rem;
+				line-height: 1.8;
+			}
+			.card__bottom-line {
+				width: 30%;
+				height: 3px;
+				margin: 0 auto;
+				background-color: #f1eee9;
+			}
+			&:hover {
+				color: #c7b299;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			flex-flow: row wrap;
+			.card {
+				margin-top: 2rem;
+				width: 48%;
+			}
+		}
+		@media screen and (max-width: 575px) {
+			.card {
+				margin-top: 2rem;
+				width: 100%;
+			}
+		}
+	}
+
+}

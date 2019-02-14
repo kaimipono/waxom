@@ -1,0 +1,15 @@
+header.top-line
+	.header-content.container
+		.logo.wow.fadeInLeft.slow
+			.logo__icon
+				img(src='assets/img/icon_logo.png', alt='Logo', class='logo__img')
+			.logo__title waxom
+		nav.top-line__navbar
+			ul.navbar__menu
+				- const arrNavItems = ['home', 'about us', 'portfolio', 'features', 'blog', 'pricing', 'shortcodes', 'contact'];
+				- for (let i = 0; i < arrNavItems.length; i++)
+					li.navbar__item.wow.fadeInRight.slow
+						a(href='#', class='navbar__link') #{arrNavItems[i]}
+
+			button(class='hamburger__menu wow fadeInRight slow', onclick='expandMenu()')
+				i.fas.fa-bars

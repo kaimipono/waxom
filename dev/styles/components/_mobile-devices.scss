@@ -1,0 +1,35 @@
+.mobile-devices {
+	background-color: #fbfaf8;
+	> div {
+		display: flex;
+		justify-content: space-between;
+		padding: 4rem 3rem 0;
+		.mobile-devices__img {
+			margin-top: 2rem;
+		}
+		.mobile-devices__desc {
+			width: 60%;
+			align-self: center;
+			.mobile-devices__dividends {
+				margin-left: 5rem;
+				list-style-image: url('../img/marker.png');
+				list-style-position: outside;
+				.dividends__item {
+					margin-top: 1rem;
+				}
+			}
+			@media screen and (max-width: 575px) {
+				width: 90%;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			flex-direction: column;
+			.mobile-devices__desc {
+				order: -1;
+				.mobile-devices__dividends {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}

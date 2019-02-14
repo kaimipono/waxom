@@ -1,0 +1,128 @@
+header.top-line {
+	position: fixed;
+	max-width: $maxWidthPage;
+	width: 100%;
+	height: auto;
+	z-index: 1;
+	> div {
+		max-width: 75rem;
+		width: $containerWidth;
+		padding: 2rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		color: #fff;
+		text-transform: capitalize;
+		.logo {
+			display: flex;
+			align-items: center;
+			.logo__img {
+				max-width: 100%;
+			}
+			.logo__title {
+				
+				font-family: $raleway_r;
+				font-size: 2.125rem;
+			}
+			@media screen and (max-width: 991px) {
+				.logo__title {
+					font-size: 1.8rem;
+				}
+			}
+			@media screen and (max-width: 767px) {
+				.logo__title {
+					display: none;
+				}
+			}
+		}
+		.top-line__navbar {
+			width: auto;
+			.navbar__menu {
+				display: flex;
+				.navbar__item {
+					margin: 0 0.8rem;
+					.navbar__link {
+						color: inherit;
+						font-size: 0.875rem;
+						&:hover {
+							color: $brandBrownLightColor;
+						}
+					}
+					@media screen and (max-width: 1199px) {
+						margin: 0 0.6rem;
+					}
+					@media screen and (max-width: 991px) {
+						margin: 0 0.3rem;
+					}
+				}
+			}
+			.hamburger__menu {
+				display: none;
+				background-color: transparent;
+				border: none;
+				i {
+					padding: 1rem;
+					color: #fff;
+				}
+			}
+			@media screen and (max-width: 1816px) {
+				
+			}
+			@media screen and (max-width: 1519px) {
+				
+			}
+			@media screen and (max-width: 767px) {
+				.navbar__menu{
+					flex-direction: column;
+					align-items: center;
+					.navbar__link {
+						display: none;
+					}
+				}
+				&.expanded {
+					width: 100%;
+					margin: 0 auto;
+					padding: 4rem 0;
+					background-color: rgba(0, 0, 0, 0.8);
+					.navbar__link {
+						display: flex;
+						padding: 0.6rem 0;
+					}
+				}
+				.hamburger__menu {
+					display: block;
+					position: absolute;
+					top: 1rem;
+					right: 2rem;
+					i {
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+		@media screen and (max-width: 1816px) {
+			width: $containerWidth * 1.2;
+		}
+		@media screen and (max-width: 1519px) {
+			width: $containerWidth * 1.4;
+		}
+		@media screen and (max-width: 1199px) {
+			width: $containerWidth * 1.44;
+		}
+		@media screen and (max-width: 991px) {
+			width: $containerWidth * 1.47;
+		}
+		@media screen and (max-width: 767px) {
+			padding: 1rem 0;
+		}
+	}
+	&.dark-header {
+
+		height: auto;
+		background-color: rgba(0, 0, 0, 0.5);
+		> div {
+			padding: 1rem 0;
+		}
+	}
+}

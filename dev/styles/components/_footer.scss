@@ -1,0 +1,149 @@
+footer {
+	color: #555;
+	.top-footer {
+		width: 100%;
+		padding: 4.7rem 0;
+		background-color: #191919;
+		.top-footer__content {
+			.footer__columns {
+				display: flex;
+				justify-content: space-between;
+				.footer__column {
+					width: 24%;
+					p {
+						font-size: 0.875rem;
+						line-height: 1.6;
+					}
+					.footer__column-title {
+						margin-bottom: 2rem;
+						font-family: $raleway_b;
+						font-size: 1.5rem;
+						color: #fff;
+						text-transform: capitalize;
+					}
+					.footer__line-delimiter {
+						margin: 1.75rem auto;
+						width: 100%;
+						height: 2px;
+						background-color: #252525;
+					}
+					.recent-post__date, .twit__date {
+						font-size: 0.75rem;
+						color: #363636;
+					}
+					.recent-post__date {
+						margin-bottom: 0.75rem;
+					}
+					.twit__date {
+						margin-top: 0.75rem;
+					}
+					.footer__recent-post:hover, .twitter-post:hover {
+						.recent-post__date, .twit__date {
+							color: #fff;
+						}
+						.recent-post__text, .twit__text {
+							color: $brandBrownLightColor;
+						}
+					}
+					.dribble-widget__gallery {
+						width: 100%;
+						display: flex;
+						flex-flow: row wrap;
+						justify-content: space-between;
+						.dribble-widget__card {
+							margin-top: 0.5rem;
+							width: 48%;
+							.dribble-widget__img {
+								width: 100%;
+							}
+						}
+					}
+				}
+				.footer__about-waxom {
+					.logo {
+						margin-top: -1.2rem;
+						margin-bottom: 1.75rem;
+						display: flex;
+						align-items: center;
+						.logo__img {
+			
+						}
+						.logo__title {
+							text-transform: capitalize;
+							font-family: $raleway_r;
+							font-size: 2.125rem;
+							color: #fff;
+						}
+					}
+					.footer__about {
+						margin-bottom: 2rem;
+					}
+					.post__readmore-btn {
+						cursor: pointer;
+						text-transform: capitalize;
+						color: #d1d1d1;
+						border: none;
+						background-color: transparent;
+						i {
+							padding-left: 0.5rem;
+						}
+						transition: 0.5s ease;
+						&:hover {
+							color: $brandBrownLightColor;
+						}
+					}
+				}
+				@media screen and (max-width: 767px) {
+					flex-flow: row wrap;
+					.footer__column {
+						width: 49%;
+						margin-top: 2rem;
+					}
+				}
+				@media screen and (max-width: 575px) {
+					.footer__column {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.bottom-footer {
+		width: 100%;
+		padding: 2.5rem 0;
+		background-color: #111;
+		.bottom-footer__content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.footer__span {
+				padding-right: 0.875rem;
+				text-transform: capitalize;
+				color: #4a4a4a;
+				font-size: 0.875rem;
+				.footer__span-span {
+					color: #959595;
+				}
+			}
+			.bottom-footer__right-link {
+				display: inline-block;
+				padding: 0 0.875rem;
+				text-transform: capitalize;
+				color: #4a4a4a;
+				border-left: 2px solid #4a4a4a;
+				&:hover {
+					color: $brandBrownLightColor;
+				}
+			}
+			@media screen and (max-width: 991px) {
+				flex-direction: column;
+				.bottom-footer__left {
+					padding-top: 1rem;
+				}
+			}
+		}
+		@media screen and (max-width: 575px) {
+			font-size: 0.7rem!important;
+		}
+	}
+}

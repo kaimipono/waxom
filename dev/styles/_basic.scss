@@ -1,0 +1,79 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: $basicFontSize;
+}
+
+body {
+	font-family: $montserrat;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+
+.page-wrapper {
+	max-width: $maxWidthPage;
+	min-width: $minWidthPage;
+	position: relative;
+	margin: 0 auto;
+	color: $textColor;;
+}
+
+.container {
+	width: $containerWidth;
+	margin: 0 auto;
+	@media screen and (max-width: 1816px) {
+		width: $containerWidth * 1.2;
+	}
+	@media screen and (max-width: 1519px) {
+		width: $containerWidth * 1.4;
+	}
+	@media screen and (max-width: 1199px) {
+		width: $containerWidth * 1.44;
+	}
+	@media screen and (max-width: 991px) {
+		width: $containerWidth * 1.47;
+	}
+}
+
+.btn {
+	padding: 1rem 2rem;
+	border: 2px solid $brandBrownLightColor;
+	border-radius: 3%;
+	background-color: $brandBrownLightColor;
+	color: #fff;
+	box-shadow: 0 3px 0 #736357;
+	transform: 0.5s ease;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-family: $raleway_e;
+	font-size: 0.875rem;
+	&:hover {
+		background-color: transparent;
+		color: $brandBrownLightColor;
+	}
+}
+
+.section__title {
+	color: $textTitle;
+	margin-bottom: 2rem;
+	font-family: $raleway_s;
+	font-size: 1.875rem;
+	text-transform: capitalize;
+}
+
+.section__desc {
+	margin-bottom: 2.5rem;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+

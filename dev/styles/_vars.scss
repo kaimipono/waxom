@@ -1,0 +1,38 @@
+// ========Variables==========
+
+// -----------fonts-----------
+
+$raleway_r:	'Raleway Regular', sans-serif;
+$raleway_m:	'Raleway Medium', sans-serif;
+$raleway_s:	'Raleway Semibold', sans-serif;
+$raleway_b:	'Raleway Bold', sans-serif;
+$raleway_e:	'Raleway Extrabold', sans-serif;
+
+$montserrat: 'Montserrat Light', sans-serif;
+
+$roboto: 'Roboto Regular', sans-serif;
+
+// ---------colors-------------
+
+$brandBrownLightColor: #998675;
+$brandBrownDarkColor: #362f2d;
+$textColor: #8c8c8c;
+$textTitle: #555;
+// ---------sizes--------------
+
+$basicFontSize: 16px;
+
+//  ---------dimensions----------
+
+$maxWidthPage: 120rem;
+$minWidthPage: 20rem;
+$containerWidth: 62.5%;
+
+// ----------  media -----------
+$xxxl: 'screen and (min-width: 1817px)';
+$xxl: 'screen and (max-width: 1816px)';
+$xl: 'screen and (max-width: 1519px)';
+$lg: 'screen and (max-width: 1199px)';
+$md: 'screen and (max-width: 991px)';
+$sm: 'screen and (max-width: 767px)';
+$xs: 'screen and (max-width: 575px)';

@@ -1,0 +1,132 @@
+.slider {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 65rem;
+	background: url('../img/slider_bg.jpg') left top no-repeat;
+	.slider__overlay {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.55);
+	}
+	.slider__slide {
+		display: none;
+		position: absolute;
+		width: 40%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		text-align: center;
+		.slide__title-1 {
+			margin-bottom: 0.8rem;
+			font-family: $raleway_m;
+			font-size: 2.25rem;	
+		}
+		.slide__title-2 {
+			margin-bottom: 1rem;
+			font-family: $raleway_e;
+			font-size: 3.25rem;
+		}
+		.slide__text {
+			width: 70%;
+			margin: 0 auto 3.5rem;
+		}
+		@media screen and (max-width: 1199px) {
+			.slide__title-1 {
+				font-size: 2.05rem;	
+			}
+			.slide__title-2 {
+				font-size: 3rem;
+			}
+		}
+		@media screen and (max-width: 991px) {
+			.slide__title-1 {
+				font-size: 1.95rem;	
+			}
+			.slide__title-2 {
+				font-size: 2.9rem;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			width: 45%;
+			.slide__title-1 {
+				font-size: 1.75rem;	
+			}
+			.slide__title-2 {
+				font-size: 2.7rem;
+			}
+		}
+		@media screen and (max-width: 575px) {
+			width: 50%;
+		} 
+	}
+	.slider__prev, .slider__next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		padding: 1rem 2rem;
+		border-width: 0;
+		border-radius: 10%;
+		background-color: transparent;
+		transition: 0.5s ease;
+		.fas {
+			font-size: 5rem;
+			color: #fff;
+		}
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+		@media screen and (max-width: 991px) {
+			.fas {
+				font-size: 4rem;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			.fas {
+				font-size: 3rem;
+			}
+		}
+
+	}
+	.slider__prev {
+		left: 8%;
+		@media screen and (max-width: 767px) {
+			left: 5%;
+		}
+		@media screen and (max-width: 575px) {
+			left: 2%;
+		}
+	}
+	.slider__next {
+		right: 8%;
+		@media screen and (max-width: 767px) {
+			right: 5%;
+		}
+		@media screen and (max-width: 575px) {
+			right: 2%;
+		}
+	}
+	.slider__dots {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 2.5rem;
+		.slider__dot {
+			width: 0.8rem;
+			height: 0.8rem;
+			display: inline-block;
+			margin: 0 0.4rem;
+			background-color: #908f8e;
+			border: 2px solid #908f8e;
+			border-radius: 50%;
+			transform: 0.5s ease;
+			cursor: pointer;
+			&:hover, &.active {
+				transform: scale(1.3);
+				background-color: transparent;
+			}
+		}
+	}
+}

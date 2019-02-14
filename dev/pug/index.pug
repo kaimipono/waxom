@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+html(lang="en")
+	include components/head.pug
+body
+	.page-wrapper
+		include components/header.pug
+
+		main.main-content
+			// Slider
+			section.slider
+				.slider__overlay
+				// Slide
+				.slider__slide
+					h2.slide__title-1 Unique and Modern Design
+					h2.slide__title-2 Portfolio PSD Template
+					p.slide__text
+						| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum
+					button.btn.slide__btn get started
+				// Slide
+				.slider__slide
+					h2.slide__title-1 Unique2 and Modern2 Design2
+					h2.slide__title-2 Portfolio PSD Template
+					p.slide__text
+						| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod maim placerat facer possim assum
+					button.btn.slide__btn get started
+				// Slide
+				.slider__slide
+					h2.slide__title-1 Unique3 and Modern3 Design3
+					h2.slide__title-2 Portfolio PSD Template
+					p.slide__text
+						| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod maim placerat facer possim assum
+					button.btn.slide__btn get started
+				// Next and previous buttons
+				button.slider__prev(onclick = 'plusSlides(-1)')
+					i.fas.fa-angle-left
+				button.slider__next(onclick = 'plusSlides(1)')
+					i.fas.fa-angle-right
+
+
+				// Slider dots
+				.slider__dots
+					span.slider__dot(onclick = 'currentSlide(1)')
+					span.slider__dot(onclick = 'currentSlide(2)')
+					span.slider__dot(onclick = 'currentSlide(3)')
+			// Section services
+			section.services.container
+				.services__cards
+					.card.wow.fadeInUp.fast
+						.card__icon
+							i.fab.fa-sketch
+						h3.card__title web & app design
+						p.card__desc
+							| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+						.card__bottom-line
+					.card.wow.fadeInUp.fast
+						.card__icon
+							i.fas.fa-laptop
+						h3.card__title development
+						p.card__desc
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, corrupti beatae nisi porro optio nemo voluptas.
+						.card__bottom-line
+					.card.wow.fadeInUp.fast
+						.card__icon
+							i.fas.fa-cog
+						h3.card__title customization
+						p.card__desc
+							| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+						.card__bottom-line
+					.card.wow.fadeInUp.fast
+						.card__icon
+							i.fas.fa-folder-open
+						h3.card__title marketing
+						p.card__desc
+							| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+						.card__bottom-line
+
+			// Section Our Latest Projects
+			section.latest-projects.container.wow.fadeInUp.fast
+				h2.section__title.wow.fadeInUp.fast our latest projects
+				p.section__desc.wow.fadeInUp.fast
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo excepturi natus aperiam tenetur fugit labore earum laboriosam quisquam qui, delectus!
+				.filters.wow.fadeInUp.fast
+					button.filter__btn all
+					button.filter__btn web design
+					button.filter__btn mobile app
+					button.filter__btn illustration
+					button.filter__btn photography
+				.projects-gallery
+					a(href='#', class='gallery__link')
+						.gallery__card.wow.fadeInUp.fast
+							.gallery__card-img
+								img(src='assets/img/photo01.jpg', alt='app on mobile screen', style='width: 100%;display:block')
+								.img__hover-overlay
+									.overlay__icons
+										i.fas.fa-link
+										i.fas.fa-search
+							.gallery__card-desc
+								h3.gallery__card-title claritas etiam processus
+								p.gallery__card-category photography, nature
+					a(href='#', class='gallery__link')
+						.gallery__card.wow.fadeInUp.fast
+							.gallery__card-img
+								img(src='assets/img/photo02.jpg', alt='app on mobile screen', style='width: 100%;display:block')
+								.img__hover-overlay
+									.overlay__icons
+										i.fas.fa-link
+										i.fas.fa-search
+							.gallery__card-desc
+								h3.gallery__card-title quam nutamus farum
+								p.gallery__card-category graphic design, mock up	
+					a(href='#', class='gallery__link')
+						.gallery__card.wow.fadeInUp.fast
+							.gallery__card-img
+								img(src='assets/img/photo03.jpg', alt='app on mobile screen', style='width: 100%;display:block')
+								.img__hover-overlay
+									.overlay__icons
+										i.fas.fa-link
+										i.fas.fa-search
+							.gallery__card-desc
+								h3.gallery__card-title usus legentis videntur
+								p.gallery__card-category photography, holiday
+					a(href='#', class='gallery__link')
+						.gallery__card.wow.fadeInUp.fast
+							.gallery__card-img
+								img(src='assets/img/photo04.jpg', alt='app on mobile screen', style='width: 100%;display:block')
+								.img__hover-overlay
+									.overlay__icons
+										i.fas.fa-link
+										i.fas.fa-search
+							.gallery__card-desc
+								h3.gallery__card-title claritas etiam processus
+								p.gallery__card-category photography, nature
+					a(href='#', class='gallery__link')
+						.gallery__card.wow.fadeInUp.fast
+							.gallery__card-img
+								img(src='assets/img/photo05.jpg', alt='app on mobile screen', style='width: 100%;display:block')
+								.img__hover-overlay
+									.overlay__icons
+										i.fas.fa-link
+										i.fas.fa-search
+							.gallery__card-desc
+								h3.gallery__card-title claritas etiam processus
+								p.gallery__card-category photography, nature
+					a(href='#', class='gallery__link')
+						.gallery__card.wow.fadeInUp.fast
+							.gallery__card-img
+								img(src='assets/img/photo06.jpg', alt='app on mobile screen', style='width: 100%;display:block')
+								.img__hover-overlay
+									.overlay__icons
+										i.fas.fa-link
+										i.fas.fa-search
+							.gallery__card-desc
+								h3.gallery__card-title claritas etiam processus
+								p.gallery__card-category photography, nature
+				button.btn.projects__load-more.wow.fadeInUp.fast load more
+			// Section Mobile Devices
+			section.mobile-devices
+				.container
+					.mobile-devices__img.wow.fadeInUp.fast
+						img(src='assets/img/iphone.png', style='max-width:100%')
+					.mobile-devices__desc.wow.fadeInUp.fast
+						h2.section__title excellent for mobile devices
+						p.section__desc
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa excepturi, aliquam explicabo laborum, eum unde dicta architecto modi, ea eligendi iusto necessitatibus veniam quaerat ratione omnis facilis. Labore iusto cupiditate iure rem optio placeat, autem, ipsa cumque non. Odio.
+						ul.mobile-devices__dividends
+							li.dividends__item nam liber tempor cum soluta nobis eleifend option;
+							li.dividends__item option congue nihil imperdiet doming id quod mazim placerat facer;
+							li.dividends__item eodem modo typi, qui nunc nobis videntur parum futurum;
+							li.dividends__item investigationes demonstraverunt lectores;
+			// Section Recent Posts
+			section.recent-posts.container
+				h2.section__title.wow.fadeInUp.fast recent posts.
+				p.section__desc.wow.fadeInUp.fast
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore corporis omnis, deserunt ipsa laudantium accusamus totam enim porro placeat eaque soluta ratione! Voluptatum, saepe.
+				.posts-gallery
+					.post.wow.fadeInUp.fast
+						.post-slider
+							.post-slider__slide
+								img(src='assets/img/post_pic011.jpg', alt='Post photo #1', class='post__slide-img', style='max-width:100%;width:100%;display:block')
+								.post__img-overlay
+							.post-slider__slide
+								img(src='assets/img/post_pic012.jpg', alt='Post photo #1', class='post__slide-img', style='max-width:100%;width:100%;display:block')
+								.post__img-overlay
+							.post-slider__slide
+								img(src='assets/img/post_pic013.jpg', alt='Post photo #1', class='post__slide-img', style='max-width:100%;width:100%;display:block')
+								.post__img-overlay
+							.post-slider__slide
+								img(src='assets/img/post_pic014.jpg', alt='Post photo #1', class='post__slide-img', style='max-width:100%;width:100%;display:block')
+								.post__img-overlay
+							.post-slider__dots
+							.post__date
+								.post__date-day 30
+								.post__date-month Sep.
+						.post__text
+							h3.post__title Lorem ipsum dolor sit amet
+							p.post__desc
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in, quas possimus
+							button(class='post__readmore-btn')
+								span read more
+								i.fas.fa-caret-right
+
+					.post.wow.fadeInUp.fast
+						.post-slider.post-slider
+							.post-slider__slide
+								img(src='assets/img/post_pic02.jpg', alt='Post photo #2', class='post__slide-img', style='max-width:100%;width:100%;display:block')
+								.post__img-overlay
+							.post-slider__slide
+								img(src='assets/img/post_pic012.jpg', alt='Post photo #1', class='post__slide-img', style='max-width:100%;width:100%;display:block')
+								.post__img-overlay
+							.post-slider__dots
+							.post__date
+								.post__date-day 30
+								.post__date-month Sep.
+						.post__text
+							h3.post__title Lorem ipsum dolor sit amet
+							p.post__desc
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in, quas possimus
+							button(class='post__readmore-btn')
+								span read more
+								i.fas.fa-caret-right
+
+					.post.wow.fadeInUp.fast
+						.post-slider
+							.post-slider__slide
+								img(src='assets/img/post_pic03.jpg', alt='Post photo #3', class='post__slide-img', style='max-width:100%;width:100%;display:block')
+								.post__img-overlay
+							.post-slider__dots
+							.post__date
+								.post__date-day 30
+								.post__date-month Sep.
+						.post__text
+							h3.post__title Lorem ipsum dolor sit amet
+							p.post__desc
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in, quas possimus
+							button(class='post__readmore-btn')
+								span read more
+								i.fas.fa-caret-right
+
+		include components/footer.pug

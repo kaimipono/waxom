@@ -1,0 +1,15 @@
+// Подключение шрифтов и переменных
+@import 'fonts';
+@import 'vars';
+@import 'sprite';
+
+//
+@import 'basic';
+// Подключение компонентов
+@import 'components/header';
+@import 'components/slider';
+@import 'components/services';
+@import 'components/latest-projects';
+@import 'components/mobile-devices';
+@import 'components/recent-posts';
+@import 'components/footer';
